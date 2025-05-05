@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
           <a href="tel:+91-7398218243" className="p-text">
-            +91-7398218243
+            +91-73982*****
           </a>
         </div>
         {!isFormSubmitted ? (
@@ -116,7 +116,7 @@ const Footer = () => {
             <div>
               <textarea
                 className="p-text"
-                placeholder="Your message/requirements"
+                placeholder="Your Message/Requirements/Testimonial"
                 value={message}
                 name="message"
                 onChange={handleChangeInput}
