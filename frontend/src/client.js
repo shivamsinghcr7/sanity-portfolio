@@ -10,6 +10,13 @@ export const client = createClient({
   token: process.env.SANITY_TOKEN_ID,
 });
 
-const builder = imageUrlBuilder(client);
+export const clientWrite = createClient({
+  projectId: "hw4h8a63",
+  dataset: "production",
+  apiVersion: "2022-02-01",
+  useCdn: false,
+  token: process.env.SANITY_TOKEN_ID,
+});
 
+const builder = imageUrlBuilder(client);
 export const urlFor = (source) => builder.image(source);
