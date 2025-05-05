@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+
 import { AppWrap, MotionWrap } from "../../wrapper/indexWrapper";
-import { clientWrite } from "../../client";
+// import { clientWrite } from "../../client";
 import { images } from "../../constants/index.js";
 
 import "./Footer.scss";
@@ -58,7 +58,7 @@ const Footer = () => {
 
     try {
       await fetch(formUrl, {
-        method: "POST", 
+        method: "POST",
         mode: "no-cors",
         body: formDataToSend,
       });
@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
           <a href="tel:+91-7398218243" className="p-text">
-            +91-73982*****
+            +91 7398218243
           </a>
         </div>
         {!isFormSubmitted ? (
